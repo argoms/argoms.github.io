@@ -9,7 +9,7 @@ Discord link: [https://discord.gg/DBAnBWC](https://discord.gg/DBAnBWC)
   
 ### <a name="p0"></a>Methodology  
 **Quirks and Conventional Wisdom**  
-To those of you with more practical experience, a lot of what I'm saying is probably going to sound really cliche. It really is, but remember that something like half the people here haven't completed CS3. Plus, I don't want to focus on the common wisdom part of it. To me, it's very important to define where you can let yourself go a bit- it's super easy to define how the ideal worker functions, but trying to live up to that can easily make you disillusioned and fail to follow *any* rules.  
+To those of you with more practical experience, a lot of what I'm saying is probably going to sound cliche. It really is, but remember that something like half the people here haven't completed CS3. Plus, I don't want to focus on the common wisdom part of it. To me, it's very important to define where you can let yourself go a bit- it's super easy to define how the ideal worker functions, but trying to live up to that can easily make you disillusioned and fail to follow *any* rules.  
   
 For example, I'm really weird about certain things. My coding speed goes down by like, a factor of 2-5 when I'm around other people; I *really* need to just be alone and think in order to work through problems. I understand the importance of meetings and communication, but my optimal work environment is extremely introverted. Put me next to a few other people at desks, and I'm mentally drained just by sitting there, let alone actually working. I've had the idea of 'you should do the bulk of your work while surrounded by other people' pushed onto me by lots of people in higher positions (professors, project managers etc.), and I can say that it just doesn't work for me- even if the people I'm surrounded by are interesting, skilled, and highly motivated individuals.  
   
@@ -167,7 +167,7 @@ emit joystickDriveForwardUpdate(0.5);
 ```
 Still no.  
   
-> Side note: iteration time is about 30s. ~15 for build, ~10-15 for sim setup. I'd be more careful about what I built if I spent more time waiting for a compile than planning. This was the other way round- I could compile stupid stuff almost as a way to metaphorically fidget with my pen while thiking.  
+> Side note: iteration time is about 30s. ~15 for build, ~10-15 for sim setup. I'd be more careful about what I built if I spent more time waiting for a compile than planning. This was the other way round- I could compile stupid stuff almost as a way to metaphorically fidget with my pen while thinking.  
    
 I wanted to see if I could get any output. I found that emit sendInfoLogMessage() was used a few times, so I placed one such statement at the top of the code block:  
 ```
