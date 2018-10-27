@@ -5,7 +5,7 @@ Contents:
 (part 2 incomplete)  
    
 Code can be found here: [https://github.com/argoms/SwarmBaseCode-ROS](https://github.com/argoms/SwarmBaseCode-ROS)  
-Discord link: https://discord.gg/DBAnBWC(https://discord.gg/DBAnBWC)  
+Discord link: [https://discord.gg/DBAnBWC](https://discord.gg/DBAnBWC)  
   
 ### <a name="p0"></a>Methodology  
 **Quirks and Conventional Wisdom**  
