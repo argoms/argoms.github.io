@@ -1,5 +1,5 @@
 
-[about](about.md)  
+
   
 Swarmathon:  
-[Presentation 1: basics & learning to learn](swarmathon1.md)
+[Presentation 1: Basics/Learning to Learn](swarmathon1.md)
