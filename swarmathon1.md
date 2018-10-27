@@ -4,7 +4,8 @@ Contents:
 [Part 1: Press A to go forwards](#p1)  
 (part 2 incomplete)  
    
-Code can be found here: [https://github.com/argoms/SwarmBaseCode-ROS](https://github.com/argoms/SwarmBaseCode-ROS)
+Code can be found here: [https://github.com/argoms/SwarmBaseCode-ROS](https://github.com/argoms/SwarmBaseCode-ROS)  
+Discord link: https://discord.gg/DBAnBWC(https://discord.gg/DBAnBWC)  
   
 ### <a name="p0"></a>Methodology  
 **Quirks and Conventional Wisdom**  
@@ -207,6 +208,7 @@ And that did it- pressing A now let me move forwards.
 
 **Takeaways:**  
 -everything uses QString, not std string  
+---Annendum: *half* of the stuff uses QString, and the other half uses std::string. Check your specific usage case- even if it's the same function (sendinfolog uses std::string half the time, and QString the other for reasons I'm not yet aware of)  
 -"emit sendInfoLogMessage()" prints to console  
 -make sure to switch to the info log tab if you're printing to it  
 -not all messages emitted have to have receivers, don't assume that they do  
