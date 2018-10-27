@@ -4,7 +4,7 @@ Contents:
 [Part 1: Press A to go forwards](#p1)  
 (part 2 incomplete)  
    
-Code can be found here: https://github.com/argoms/SwarmBaseCode-ROS  
+Code can be found here: [https://github.com/argoms/SwarmBaseCode-ROS](https://github.com/argoms/SwarmBaseCode-ROS)
   
 ### <a name="p0"></a>Methodology  
 **Quirks and Conventional Wisdom**  
@@ -50,10 +50,10 @@ As far as I've seen, there aren't really any comprehensive tutorials for swarmat
 *note: part 1 finishes at commit [5e57f37](https://github.com/argoms/SwarmBaseCode-ROS/commit/5e57f37facc8908dc6ae992b030b497673aa23a7)*  
   
 Okay, so I wanted to do something really simple- make pressing 'A' on my controller move the robot forwards. First, I just searched the entire repo for the word 'xbox'. The readme noted that joystick drivers were used for this:  
-http://wiki.ros.org/joystick_drivers  
+[http://wiki.ros.org/joystick_drivers](http://wiki.ros.org/joystick_drivers)    
   
 From there, there are four links to the different kinds of joystick drivers, and I just picked the first one because all the others told me they were things that aren't xbox controllers (ps3, wii, and spacenav).  
-http://wiki.ros.org/joy  
+[http://wiki.ros.org/joy](http://wiki.ros.org/joy)    
   
 **This tells me that the info I get is in joy.buttons and joy.axes, and that the index for 'A' is 0.**   
   
