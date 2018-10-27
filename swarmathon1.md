@@ -2,12 +2,13 @@
 Contents:  
 [Part 0: Methodology](#p0)  
 [Part 1: Press A to go forwards](#p1)  
+(part 2 incomplete)  
 
 ### <a name="p0"></a>Methodology  
 **Quirks and Conventional Wisdom**  
 To those of you with more practical experience, a lot of what I'm saying is probably going to sound really cliche. It really is, but remember that something like half the people here haven't completed CS3. Plus, I don't want to focus on the common wisdom part of it. To me, it's very important to define where you can let yourself go a bit- it's super easy to define how the ideal worker functions, but trying to live up to that can easily make you disillusioned and fail to follow *any* rules.  
   
-For example, I'm really weird about certain things. My coding speed goes down by like, a factor of 5-10 when I'm around other people; I *really* need to just be alone and think in order to work through problems. I understand the importance of meetings and communication, but my optimal work environment is extremely introverted. Put me next to a few other people at desks, and I'm mentally drained just by sitting there, let alone actually working. I've had the idea of 'you should do the bulk of your work while surrounded by other people' pushed onto me by lots of people in higher positions (professors, project managers etc.), and I can say that it just doesn't work for me- even if the people I'm surrounded by are interesting, skilled, and highly motivated individuals.  
+For example, I'm really weird about certain things. My coding speed goes down by like, a factor of 2-5 when I'm around other people; I *really* need to just be alone and think in order to work through problems. I understand the importance of meetings and communication, but my optimal work environment is extremely introverted. Put me next to a few other people at desks, and I'm mentally drained just by sitting there, let alone actually working. I've had the idea of 'you should do the bulk of your work while surrounded by other people' pushed onto me by lots of people in higher positions (professors, project managers etc.), and I can say that it just doesn't work for me- even if the people I'm surrounded by are interesting, skilled, and highly motivated individuals.  
   
 Another issue I have is that I'm horrifically bad at small details without feedback- once I'm looking at something, I can analyze what's wrong without problems. However, if I had to [...]. For example, I lost points on my last physics midterm for writing "72.1283 = 75" in my work. Because of the way I eyeball and adjust (more on that later), I'm *really* bad at noticing these things before I can see the results.  
   
@@ -190,7 +191,7 @@ Worked for the left joystick just fine.
   
 Okay, taking a step back here. **Press A to potato actually does work, I was just in the wrong tab** (make sure to be in the Info Log).  
   
-Now, since those messages clearly have no effect on movement, there's only one other place where the joy axes are even looked at in all the code, which is ROSAdapter.cpp, so I threw this in after linear was declared:
+Now, since those messages clearly have no effect on movement, there's only one other place where the joy axes are even looked at in all the code, which is 'ROSAdapter.cpp', so I threw this in after linear was declared:
 ```
 if(message->buttons[0])
 {
@@ -200,14 +201,14 @@ linear = max_motor_cmd;
 
 And that did it- pressing A now let me move forwards.
 
-**Main takeaways:**  
+**Takeaways:**  
 -everything uses QString, not std string  
 -"emit sendInfoLogMessage()" prints to console  
 -make sure to switch to the info log tab if you're printing to it  
--not all messages emitted have to have receivers
+-not all messages emitted have to have receivers, don't assume that they do  
   
 I still don't know  
--What are those joy messages for, then? I'd initially assumed that they sent to some precompiled stuff, hence why I couldn't find any reference to them in the codebase- this doesn't actually make sense in retrospect, but the alternative was thinking that they literally did nothing (which seems to be the case). My guess is that they're for other things to hook onto.
+-What are those joy messages for, then? I'd initially assumed that they sent to some precompiled stuff, hence why I couldn't find any reference to them in the codebase- this doesn't actually make sense in retrospect, but the alternative was thinking that they literally did nothing (which seems to be the case). My guess is that they're for other things to hook onto, but don't do anything at the moment?
 
 
 ### <a name="p2"></a>Part 2: (unfinished)  
