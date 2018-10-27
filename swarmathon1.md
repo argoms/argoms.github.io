@@ -3,7 +3,9 @@ Contents:
 [Part 0: Methodology](#p0)  
 [Part 1: Press A to go forwards](#p1)  
 (part 2 incomplete)  
-
+   
+Code can be found here: https://github.com/argoms/SwarmBaseCode-ROS  
+  
 ### <a name="p0"></a>Methodology  
 **Quirks and Conventional Wisdom**  
 To those of you with more practical experience, a lot of what I'm saying is probably going to sound really cliche. It really is, but remember that something like half the people here haven't completed CS3. Plus, I don't want to focus on the common wisdom part of it. To me, it's very important to define where you can let yourself go a bit- it's super easy to define how the ideal worker functions, but trying to live up to that can easily make you disillusioned and fail to follow *any* rules.  
@@ -45,6 +47,8 @@ Note that in this process, I'm explaining my learning syle. I've found that I le
 As far as I've seen, there aren't really any comprehensive tutorials for swarmathon-specific stuff once you get past setup, and ros documentation in general is very barebones. Step by step tutorials are super useful, but you won't really have any here.  
    
 ### <a name="p1"></a>Press A to go forwards  
+*note: part 1 finishes at commit [5e57f37](https://github.com/argoms/SwarmBaseCode-ROS/commit/5e57f37facc8908dc6ae992b030b497673aa23a7)*  
+  
 Okay, so I wanted to do something really simple- make pressing 'A' on my controller move the robot forwards. First, I just searched the entire repo for the word 'xbox'. The readme noted that joystick drivers were used for this:  
 http://wiki.ros.org/joystick_drivers  
   
