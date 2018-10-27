@@ -1,5 +1,4 @@
-lorem ipsum i dont remember the rest
-  
+
 Contents:  
 [Part 0: Methodology](#p0)  
 [Part 1: Press A to go forwards](#p1)  
@@ -14,20 +13,20 @@ For example, I'm really weird about certain things. My coding speed goes down by
 Another issue I have is that I'm horrifically bad at small details without feedback- once I'm looking at something, I can analyze what's wrong without problems. However, if I had to [...]. For example, I lost points on my last physics midterm for writing "72.1283 = 75" in my work. Because of the way I eyeball and adjust (more on that later), I'm *really* bad at noticing these things before I can see the results.  
   
 **Solving problems: My system in a nutshell**  
--eyeball it  
-	--like, a dozen lines of code max. Exact amount depends on your familiarity with the system- starting out, I modified like, 1-2 lines at a time.  
-		(note that it's not eyeballing it if you actually know exactly what you want and how to achieve it)  
-	--did it work? It's a miracle.    
--observe how it failed  
---comment out your eyeballed code  
+-Eyeball it  
+	---Like, a dozen lines of code max. Exact amount depends on your familiarity with the system- starting out, I modified like, 1-2 lines at a time.  
+	-----Note that it's not really eyeballing it if you actually know exactly what you want and how to achieve it. I wouldn't call it eyeballing to write a simple data structure, like a linked list, in one go.
+	---Did it work? It's a miracle.    
+-Observe how it failed  
+---Comment out your eyeballed code  
   
---start removing bits in the *existing* code to see how that affects functionality  
+-Start removing bits in the *existing* code to see how that affects functionality  
 
---use existing code as sanity checks  
-	-eg checking a new button input? use existing messenging  
+-Use existing code as sanity checks  
+	---E.g. checking a new button input? use existing messenging  
 	
---sometimes, do everything again  
-	-you can make stupid mistakes- if you're really confused, try repeating what you just did with a fresh copy    
+-Sometimes, do everything again  
+	---You can make stupid mistakes while following instructions- if you're really confused, try repeating what you just did with a fresh copy    
 	  
 Note that a critical aspect of this approach is that it *expects* failure.  
   
