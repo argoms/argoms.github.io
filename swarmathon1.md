@@ -2,7 +2,6 @@
 Contents:  
 [Part 0: Methodology](#p0)  
 [Part 1: Press A to go forwards](#p1)  
-[Part 2](#p2)  
 
 ### <a name="p0"></a>Methodology  
 **Quirks and Conventional Wisdom**  
@@ -16,12 +15,14 @@ Another issue I have is that I'm horrifically bad at small details without feedb
 -Eyeball it  
 	---Like, a dozen lines of code max. Exact amount depends on your familiarity with the system- starting out, I modified like, 1-2 lines at a time.  
 	-----Note that it's not really eyeballing it if you actually know exactly what you want and how to achieve it. I wouldn't call it eyeballing to write a simple data structure, like a linked list, in one go.
-	---Did it work? It's a miracle.    
+	---Did it compile? If not, tweak it until it does if you think you know why it didn't compile.  
+	-----Now it compiles. Did it work? It's a miracle.    
+	
 -Observe how it failed  
 ---Comment out your eyeballed code  
   
 -Start removing bits in the *existing* code to see how that affects functionality  
-
+  
 -Use existing code as sanity checks  
 	---E.g. checking a new button input? use existing messenging  
 	
@@ -154,11 +155,12 @@ joystick_publisher.publish(joy_msg);
   
 This stopped the thing from moving, so that worked as expected.  
   
->Now for another dumb sanity check: I just threw this in without any if statement: theoretically, I'd just be moving forwards as soon as I switched to manual control.  
+Now for another dumb sanity check: I just threw this in without any if statement: theoretically, I'd just be moving forwards as soon as I switched to manual control.  
 ```
 emit joystickDriveForwardUpdate(0.5); 
 ```
 Still no.  
+  
 > Side note: iteration time is about 30s. ~15 for build, ~10-15 for sim setup. I'd be more careful about what I built if I spent more time waiting for a compile than planning. This was the other way round- I could compile stupid stuff almost as a way to metaphorically fidget with my pen while thiking.  
    
 I wanted to see if I could get any output. I found that emit sendInfoLogMessage() was used a few times, so I placed one such statement at the top of the code block:  
@@ -168,7 +170,7 @@ emit sendInfoLogMessage("Potato");
 
 Right after checking for the publisher. It's not constant, but it happens- it took a bit of testing, and I found that it pretty much logged this every time I gave a controller input. I put the same statement within the first bit of code which I wrote to test whether 'A' was being pressed, but that seemingly did nothing.  
   
->Now for another round of 'doing stupid stuff': I tried changing the joy values directly because I was out of ideas.    
+Now for another round of 'doing stupid stuff': I tried changing the joy values directly because I was out of ideas.    
 ```
 joy_msg->axes[right_stick_y_axis] = (things)  
 ```
@@ -202,10 +204,11 @@ And that did it- pressing A now let me move forwards.
 -everything uses QString, not std string  
 -"emit sendInfoLogMessage()" prints to console  
 -make sure to switch to the info log tab if you're printing to it  
+-not all messages emitted have to have receivers
   
 I still don't know  
 -What are those joy messages for, then? I'd initially assumed that they sent to some precompiled stuff, hence why I couldn't find any reference to them in the codebase- this doesn't actually make sense in retrospect, but the alternative was thinking that they literally did nothing (which seems to be the case). My guess is that they're for other things to hook onto.
 
 
-### <a name="p2"></a>Part 2: more things  
-zzz2  
+### <a name="p2"></a>Part 2: (unfinished)  
+will update later
