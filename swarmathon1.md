@@ -7,6 +7,8 @@ Contents:
 Code can be found here: [https://github.com/argoms/SwarmBaseCode-ROS](https://github.com/argoms/SwarmBaseCode-ROS)  
 Discord link: [https://discord.gg/DBAnBWC](https://discord.gg/DBAnBWC)  
   
+[Presentation recording](https://www.youtube.com/watch?v=mCsN0i459QM)  
+  
 ### <a name="p0"></a>Methodology  
 **Quirks and Conventional Wisdom**  
 To those of you with more practical experience, a lot of what I'm saying is probably going to sound cliche. It really is, but remember that something like half the people here haven't completed CS3. Plus, I don't want to focus on the common wisdom part of it. To me, it's very important to define where you can let yourself go a bit- it's super easy to define how the ideal worker functions, but trying to live up to that can easily make you disillusioned and fail to follow *any* rules.  
